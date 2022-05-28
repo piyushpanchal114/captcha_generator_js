@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Captcha Generator</title>
+</head>
+<body onload="captchaGenerator()">
+    <h1>Captcha Generator</h1>
+    <form>
+        <div class="main">
+            <p>Captcha<span>*</span>:</p>
+            <span class="pad-area"><input type="text" name="generatedCaptcha" id="captchaOne" disabled /></span>
+            <span class="pad-area"><button onclick="captchaGenerator()">Refresh</button></span>
+        </div>
+        <br>
+        <div class="main">
+            <p>Enter Captcha:</p>
+            <span class="pad-area"><input type="text" required name="userCaptcha" id="captchaTwo"></span>
+            <span class="pad-area"><button type="submit" onclick="isValid()">Submit</button></span>
+        </div>    
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
